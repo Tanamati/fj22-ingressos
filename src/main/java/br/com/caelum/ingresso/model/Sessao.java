@@ -37,12 +37,25 @@ public class Sessao {
 		this.preco = sala.getPreco().add(filme.getPreco());
 	}
 	
-	public BigDecimal getPreco() {
-		return preco.setScale(2, RoundingMode.HALF_UP);
+	 public BigDecimal getPreco() {
+	    	if (preco!= null) {
+	    		
+	    	return preco.setScale(2, RoundingMode.HALF_UP);
+	    	
+	    	}
+	    	return BigDecimal.ZERO;
+	    }
+	 
+	 public void setPreco(BigDecimal preco) {
+			this.preco = preco;
+		}
+	
+	public void setFilme(Filme filme) {
+		this.filme = filme;
 	}
 	
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
+	public void setSala(Sala sala) {
+		this.sala = sala;
 	}
 	
 	public LocalTime getHorarioTermino() {

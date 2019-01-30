@@ -40,11 +40,19 @@ public class Sala {
     }
     
     public BigDecimal getPreco() {
+    	if (preco!= null) {
+    		
     	return preco.setScale(2, RoundingMode.HALF_UP);
+    	
+    	}
+    	return BigDecimal.ZERO;
     }
     
+    public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
 
-    public Integer getId() {
+	public Integer getId() {
         return id;
     }
 
