@@ -10,7 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import br.com.caelum.ingresso.model.decontos.Desconto;
+import br.com.caelum.ingresso.model.descontos.Desconto;
 
 @Entity
 public class Ingresso {

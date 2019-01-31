@@ -12,7 +12,8 @@ import br.com.caelum.ingresso.model.Lugar;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
 import br.com.caelum.ingresso.model.TipoDeIngresso;
-import br.com.caelum.ingresso.model.decontos.SemDesconto;
+import br.com.caelum.ingresso.model.descontos.SemDesconto;
+
 import org.junit.Assert;
 
 public class DescontoTest {

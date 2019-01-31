@@ -1,10 +1,11 @@
 package br.com.caelum.ingresso.model;
 
 import java.math.BigDecimal;
-import br.com.caelum.ingresso.model.decontos.SemDesconto;
-import br.com.caelum.ingresso.model.decontos.Desconto;
-import br.com.caelum.ingresso.model.decontos.DescontoParaEstudantes;
-import br.com.caelum.ingresso.model.decontos.DescontoParaBancos;
+
+import br.com.caelum.ingresso.model.descontos.Desconto;
+import br.com.caelum.ingresso.model.descontos.DescontoParaBancos;
+import br.com.caelum.ingresso.model.descontos.DescontoParaEstudantes;
+import br.com.caelum.ingresso.model.descontos.SemDesconto;
 
 
 public enum TipoDeIngresso {
